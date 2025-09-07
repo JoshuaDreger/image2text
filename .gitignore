@@ -1,3 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments & env files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+*.env
+
+# Testing
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+coverage.xml
+htmlcov/
+
+# Type checking
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# Docker
+docker-compose.override.yml
+
+# Streamlit
+.streamlit/
+
+# Local data
+data/
+*.sqlite3
 
 # Project-specific
 image2text/samples/
+image2text/__pycache__/

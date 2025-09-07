@@ -1,0 +1,41 @@
+# VCS
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.build/
+
+# Envs
+.env
+.venv/
+venv/
+
+# Data / models / cache
+data/
+outputs/
+models/
+checkpoints/
+hf_cache/
+.cache/
+.cache/**
+
+# OS & tooling
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
+
+# Big artifacts
+*.pt
+*.bin
+*.safetensors
+*.sif
+*.tar
+*.zip
+*.whl
