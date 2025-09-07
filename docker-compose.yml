@@ -1,0 +1,20 @@
+services:
+  image2text:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"  # FastAPI
+      - "8502:8502"  # Streamlit UI
+    environment:
+      - OUTPUT_DIR=/data
+      - I2T_MODEL=llava-hf/llava-onevision-qwen2-7b-ov-hf
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - STREAMLIT_SERVER_FILEWATCHER_TYPE=poll
+      - STREAMLIT_SERVER_RUN_ON_SAVE=true
+      - STREAMLIT_BROWSER_GATHERUSAGESTATS=false
+    volumes:
+      - ./image2text:/app/image2text:rw
+      - ./requirements.txt:/app/requirements.txt:ro
+      - ./data:/app/data

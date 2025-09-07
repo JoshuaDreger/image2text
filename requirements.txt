@@ -1,0 +1,25 @@
+torch>=2.3      # for CPU; use CUDA build if you pick a CUDA base
+safetensors
+python-multipart
+
+
+# Web UI
+streamlit==1.36.*
+# API server
+fastapi==0.115.*
+uvicorn[standard]==0.30.*
+
+# Hugging Face stack
+transformers>=4.47
+safetensors>=0.4
+huggingface_hub>=0.23
+accelerate>=0.34
+sentencepiece>=0.2
+hf-transfer>=0.1.6
+
+# Imaging / utils
+pillow==10.*
+numpy==1.26.*
+requests==2.31.*
+tenacity==8.2.*
+watchdog==4.0.*
